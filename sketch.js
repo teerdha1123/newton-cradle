@@ -56,14 +56,14 @@ function draw() {
   sling5.display();
   //sling6.display();
 
-  keyPressed();
+  
   drawSprites ();
 }
 
-
+function keyPressed() { 
 	if (keyCode === UP_ARROW) 
 	{ Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-100,y:-100}); } 
-
+} 
 
 
 
